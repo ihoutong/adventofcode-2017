@@ -510,13 +510,13 @@ zzv wik iorhat qkb kjb lykdz vrce yjsjwj
 gyw xzgbi efus uuy
 hwcy ujdun bjjuvd jbdvju onnk xeyy mmp onkn qyzl
 jwfm ptjwrbl hhuv uolz adyweh qpj wxyogp igvnojq jmfw pqs fsnirby';
-		
-input <- unlist(strsplit(input, "\n"));
+
+input = unlist(strsplit(input, "\n"));
 
 solution_part_1 <- function (input){
 	valid_phrase <- 0;
 	for (i in 1:length(input)){
-		elements_in_vector = unlist(strsplit(input[i], " "));
+		elements_in_vector <- unlist(strsplit(input[i], " "));
 		duplicated_elements <- duplicated(elements_in_vector);
 		if (length(elements_in_vector[duplicated_elements]) == 0){
 			valid_phrase <- valid_phrase + 1;
@@ -527,7 +527,4 @@ solution_part_1 <- function (input){
 
 solution_part_1(input);
 
-
-
-
-
+#Temporarily skipping part 2. Having issues creating a dynamic vector.
